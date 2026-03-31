@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>LOGO</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Portfolio</li>
+      <li>Skills</li>
+      <li>Interview</li>
+      <li>Profile</li>
+      <li>Logout</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1>Welcome, Student!</h1>
+      <p>Portfolio Builder System</p>
+    </header>
+
+    <!-- DASHBOARD CARDS -->
+    <section class="cards">
+      <div class="card">📁 Portfolio Builder</div>
+      <div class="card">🧠 Skills Assessment</div>
+      <div class="card">🎯 Interview Readiness</div>
+      <div class="card">📊 Results</div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="box">
+      <h2>Portfolio</h2>
+      <input type="text" placeholder="Project Title">
+      <textarea placeholder="Description"></textarea>
+      <input type="file">
+      <button>Save Portfolio</button>
+
+      <div class="list">
+        <p>Project 1 | View | Edit | Delete</p>
+        <p>Project 2 | View | Edit | Delete</p>
+      </div>
+    </section>
+
+    <!-- SKILLS / RESULTS -->
+    <section class="box">
+      <h2>Skills Assessment Results</h2>
+
+      <input type="text" placeholder="Student Name">
+      <input type="number" placeholder="Exam Score">
+
+      <select>
+        <option>Certification Level</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+
+      <button>Save Result</button>
+
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+          <th>Certification</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Ana Reyes</td>
+          <td>85</td>
+          <td>Advanced</td>
+          <td>Edit | Delete</td>
+        </tr>
+        <tr>
+          <td>Mark Lopez</td>
+          <td>78</td>
+          <td>Intermediate</td>
+          <td>Edit | Delete</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- INTERVIEW -->
+    <section class="box">
+      <h2>Interview Readiness (AI)</h2>
+
+      <select>
+        <option>Select Job Role</option>
+        <option>Web Developer</option>
+        <option>UI/UX Designer</option>
+      </select>
+
+      <p class="question">
+        "Tell me about your experience in programming"
+      </p>
+
+      <textarea placeholder="Your Answer"></textarea>
+      <button>Submit Answer</button>
+
+      <div class="feedback">
+        <strong>AI Feedback:</strong>
+        <p>Your answer is clear but add specific examples.</p>
+      </div>
+    </section>
+
+    <!-- EMPLOYER DASHBOARD -->
+    <section class="box">
+      <h2>Employer Dashboard</h2>
+
+      <input type="text" placeholder="Search Candidate">
+
+      <div class="filters">
+        <select><option>Skill</option></select>
+        <select><option>Experience</option></select>
+      </div>
+
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Skills</th>
+          <th>Portfolio</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Juan</td>
+          <td>Web Dev</td>
+          <td>View</td>
+          <td>Add</td>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>UI/UX</td>
+          <td>View</td>
+          <td>Add</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+</div>
+</body>
+</html>
